@@ -1,0 +1,90 @@
+/* member section styles */
+.member {
+    padding: 94.6px 0 140px;
+    background-color: var(--white);
+}
+
+.member__topside {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.member__title {
+    font-size: 54px;
+    line-height: 64.8px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.member__action {
+    display: flex;
+    align-items: center;
+}
+
+.member__arrow {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.member__arrow svg circle:hover {
+    fill: var(--orange);
+}
+
+.member__pages {
+    margin: 0 14px;
+}
+
+.member__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.member__card {
+    width: 32.24%;
+    padding: 0 37px;
+    text-align: center;
+}
+
+.member__img {
+    height: 320px;
+    width: 320px;
+    padding: 21px 13px 0px 14px;
+    margin-bottom: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('./images/StampPaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.member__name {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.member__status {
+    margin: 6px 0 19px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--accent);
+}
+
+.member__btn {
+    padding: 6.5px;
+    margin: 0 auto;
+    max-width: 113px;
+    border-radius: 62px;
+    border: 1px solid var(--dark-blue);
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+    color: var(--dark-blue);
+    cursor: pointer;
+}

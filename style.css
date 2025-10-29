@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input {
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body, html {
+    font-family: "Golos Text", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #E9DED4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+:root {
+    --dark-blue: #3057A2;
+    --white: #fff;
+    --black: #1F1F1F;
+    --orange: #FBCE51;
+    --accent: #313131;
+    --pearl: #F54932;
+    --lg-font-size: 54px;
+    --md-font-size: 20px;
+    --sm-font-size: 16px;
+}
+
+.container {
+    max-width: 1396px;
+    padding: 0 87px;
+    margin: 0 auto;
+}
+
+.stone-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./images/stone-effect-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
+}
+
+.papper-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./images/support/papper-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* ticker */
+
+.ticker {
+    margin: 0 auto;
+    padding: 18px 0;
+    max-width: 180%;
+    background-color: var(--pearl);
+    overflow: hidden;
+}
+
+.ticker div {
+    display: flex;    
+    width: 100%;
+    animation: ticker 10s linear infinite;
+}
+
+.ticker__text {
+    width: 100%;
+    white-space: nowrap;
+    font-family: "Merriweather", serif;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 22px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+    
+}
+
+/* footer styles */
+
+.footer {
+    padding: 40px 0 72px;
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: var(--accent);
+}
